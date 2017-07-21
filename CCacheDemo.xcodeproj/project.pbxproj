@@ -14,7 +14,18 @@
 		42B07FA41F21A4DC001052E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B07FA31F21A4DC001052E5 /* Assets.xcassets */; };
 		42B07FA71F21A4DC001052E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B07FA51F21A4DC001052E5 /* LaunchScreen.storyboard */; };
 		42B07FB01F21A581001052E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B07FAF1F21A581001052E5 /* UIKit.framework */; };
+		42B07FB81F21AC09001052E5 /* CCacheDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B07FB71F21AC09001052E5 /* CCacheDemoTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42B07FBA1F21AC09001052E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B07F8C1F21A4DC001052E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B07F931F21A4DC001052E5;
+			remoteInfo = CCacheDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		42B07F941F21A4DC001052E5 /* CCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +39,9 @@
 		42B07FA61F21A4DC001052E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B07FA81F21A4DC001052E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B07FAF1F21A581001052E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42B07FB51F21AC09001052E5 /* CCacheDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCacheDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B07FB71F21AC09001052E5 /* CCacheDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCacheDemoTests.m; sourceTree = "<group>"; };
+		42B07FB91F21AC09001052E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42B07FB21F21AC09001052E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				42B07F961F21A4DC001052E5 /* CCacheDemo */,
+				42B07FB61F21AC09001052E5 /* CCacheDemoTests */,
 				42B07F951F21A4DC001052E5 /* Products */,
 				42B07FAE1F21A581001052E5 /* Frameworks */,
 			);
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				42B07F941F21A4DC001052E5 /* CCacheDemo.app */,
+				42B07FB51F21AC09001052E5 /* CCacheDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +114,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		42B07FB61F21AC09001052E5 /* CCacheDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				42B07FB71F21AC09001052E5 /* CCacheDemoTests.m */,
+				42B07FB91F21AC09001052E5 /* Info.plist */,
+			);
+			path = CCacheDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +143,24 @@
 			productReference = 42B07F941F21A4DC001052E5 /* CCacheDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		42B07FB41F21AC09001052E5 /* CCacheDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B07FBC1F21AC09001052E5 /* Build configuration list for PBXNativeTarget "CCacheDemoTests" */;
+			buildPhases = (
+				42B07FB11F21AC09001052E5 /* Sources */,
+				42B07FB21F21AC09001052E5 /* Frameworks */,
+				42B07FB31F21AC09001052E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42B07FBB1F21AC09001052E5 /* PBXTargetDependency */,
+			);
+			name = CCacheDemoTests;
+			productName = CCacheDemoTests;
+			productReference = 42B07FB51F21AC09001052E5 /* CCacheDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +174,12 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = UULZ5XP4R2;
 						ProvisioningStyle = Automatic;
+					};
+					42B07FB41F21AC09001052E5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6553VD26ZV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42B07F931F21A4DC001052E5;
 					};
 				};
 			};
@@ -141,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				42B07F931F21A4DC001052E5 /* CCacheDemo */,
+				42B07FB41F21AC09001052E5 /* CCacheDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +210,13 @@
 				42B07FA71F21A4DC001052E5 /* LaunchScreen.storyboard in Resources */,
 				42B07FA41F21A4DC001052E5 /* Assets.xcassets in Resources */,
 				42B07FA21F21A4DC001052E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B07FB31F21AC09001052E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +233,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42B07FB11F21AC09001052E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B07FB81F21AC09001052E5 /* CCacheDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42B07FBB1F21AC09001052E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B07F931F21A4DC001052E5 /* CCacheDemo */;
+			targetProxy = 42B07FBA1F21AC09001052E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42B07FA01F21A4DC001052E5 /* Main.storyboard */ = {
@@ -309,6 +389,32 @@
 			};
 			name = Release;
 		};
+		42B07FBD1F21AC09001052E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6553VD26ZV;
+				INFOPLIST_FILE = CCacheDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunmai.CCacheDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCacheDemo.app/CCacheDemo";
+			};
+			name = Debug;
+		};
+		42B07FBE1F21AC09001052E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6553VD26ZV;
+				INFOPLIST_FILE = CCacheDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunmai.CCacheDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCacheDemo.app/CCacheDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +435,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42B07FBC1F21AC09001052E5 /* Build configuration list for PBXNativeTarget "CCacheDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B07FBD1F21AC09001052E5 /* Debug */,
+				42B07FBE1F21AC09001052E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
