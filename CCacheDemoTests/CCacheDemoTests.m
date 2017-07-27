@@ -24,6 +24,17 @@
     
     XCTAssert(100 == 100);
 }
+
+
+- (void)testDist{
+    
+    NSString *st1 = @"123";
+    NSString *st2 = @"123";
+    
+    XCTAssert([st1 isEqualToString:st2]);
+
+}
+
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
