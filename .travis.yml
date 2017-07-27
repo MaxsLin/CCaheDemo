@@ -1,5 +1,6 @@
 language: objective-c
 os: osx
 osx_image: xcode8.2
+before_install: gem install xcpretty -N --no-ri --no-rdoc
 script: xcodebuild clean test -project CCacheDemo.xcodeproj -scheme CCacheDemo -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' -enableCodeCoverage YES | xcpretty
 after_success: bash <(curl -s https://codecov.io/bash) -t :b6c6c431-66c5-45ec-8a19-8a8eff0a3f94
