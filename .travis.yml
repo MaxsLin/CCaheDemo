@@ -2,3 +2,4 @@ language: objective-c
 os: osx
 osx_image: xcode8.2
 script: xcodebuild clean test -project CCacheDemo.xcodeproj -scheme CCacheDemo -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' -enableCodeCoverage YES | xcpretty
+after_success: bash <(curl -s https://codecov.io/bash)
